@@ -183,7 +183,7 @@ extern "C" {
             * by the timestamp clock frequency(default 1000Hz)
             * The ackVector indicates recption of the 64 RTP SN prior to highestSeqNr
             *  Note : isOkToTransmit should be called after incomingFeedback
-            /*
+            */
             /* Parse standardized feedback according to
             * https://tools.ietf.org/wg/avtcore/draft-ietf-avtcore-cc-feedback-message/
             * Current implementation implements -02 version
