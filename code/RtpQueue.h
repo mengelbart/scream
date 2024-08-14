@@ -18,6 +18,7 @@ public:
 	virtual int sizeOfQueue() = 0;  // Number of items in queue
 	virtual float getDelay(float currTs) = 0;
 	virtual int getSizeOfLastFrame() = 0;
+	virtual ~RtpQueueIface() = default;
 };
 
 class RtpQueueItem {
