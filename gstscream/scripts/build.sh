@@ -8,10 +8,10 @@ cd $SCREAMLIB_DIR; cmake .; make
 cd $SCRIPT_DIR
 export RUSTFLAGS="$RUSTFLAGS -L$SCREAMLIB_DIR"
 if (($ECN_ENABLED == 1)); then
-    cargo build --features ecn-enabled,screamtxbw-enabled
+    cargo build --release --features ecn-enabled,screamtxbw-enabled
     cargo clippy --features ecn-enabled,screamtxbw-enabled
 else
-    cargo build --features screamtxbw-enabled
+    cargo build --release --features screamtxbw-enabled
     cargo clippy --features screamtxbw-enabled
 fi    
 
